@@ -1,0 +1,55 @@
+header{
+    text-align: center;
+}
+body{
+    background-color: rgb(223, 227, 231);
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.titre{
+    text-shadow: 1px 1px 3px  rgb(146, 187, 152);
+    font-size: 8rem;
+    color: rgb(18, 77, 35);
+    font-family: 'Cormorant Infant', serif;
+
+}
+header p{
+    color: rgb(16, 44, 10);
+    text-shadow: 2px 2px 5px rgb(44, 126, 64);
+    font-family: 'Cormorant Infant', serif;
+    font-family: 'Dancing Script', cursive;
+}
+nav{
+    box-shadow: 5px 5px 8px;
+}
+
+footer{
+    background-color: rgb(58, 51, 51);
+}
+.navbar{
+    text-decoration-color: rgb(29, 57, 1);
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+main a:hover{
+    color: rgb(39, 95, 39);
+}
+span{
+    font-weight: bold;
+}
+
+@media  screen and (min-width: 900px) {
+    header{
+        text-align: left;
+    }
+    .titre{
+        font-size: 15rem;
+    }
+  
+    
+}
+

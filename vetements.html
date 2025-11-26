@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Twix</title>
+    <meta name="author" content="Steven ATCHALL">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icone1.png">
+    <!--Détection de la taille d'affichage-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- feuilles de styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+  
+</head>
+
+<body class="m-0 w-100 m-auto" onload="compteur()" >
+    <!-- CONTENU DE LA PAGE -->
+
+    <header id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="images/test.webp" class="d-block w-auto card-img img-fluid" alt="basket">
+                    <div class="card-img-overlay">
+                        <h1 class="card-title  titre">Twix</h1>
+                        <p class="card-text display-6">Aisance dans l'élégance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item card">
+                <img src="images/testHead2.jpg" class="d-block w-100" alt="femme">
+                <div class="card-img-overlay">
+                    <h1 class="card-title  titre">Twix</h1>
+                    <p class="card-text display-6">Aisance dans l'élégance</p>
+                </div>
+            </div>
+            <div class="carousel-item card">
+                <img src="images/testHeader.png" class="d-block w-100" alt="homme">
+                <div class="card-img-overlay">
+                    <h1 class="card-title  titre">Twix</h1>
+                    <p class="card-text display-6">Aisance dans l'élégance</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </header>
+
+
+
+    <nav class="navbar bg-body-secondary navbar-expand-lg  navigateur sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html#top">
+                <i class="fa-brands fa-cotton-bureau"></i>
+                Twix
+            </a>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Acceuil</a></li>
+                    <li class="nav-item"><a href="chaussures.html" class="nav-link">Chaussures</a></li>
+                    <li class="nav-item"><a href="#top" class="nav-link active">Vêtements</a></li>
+                    <li class="nav-item"><a href="accessoires.html" class="nav-link">Accessoires</a></li>
+                    <li class="nav-item"><a href="#pied" class="nav-link">Nous contacter</a></li>
+                    <li class="nav-item"><div class="row"><a href="panier.html" class="nav-link col-12 col-lg-6"><i
+                        class="fa-solid fa-cart-shopping"></i></a><label class="col-6 bg-light-subtle rounded-circle h-25 d-none d-lg-inline" id="navNombre">0</label></div></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+               aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+<main class="my-4 m-auto">
+
+    <!-- hommes -->
+    <h2 class="pt-4 mt-3">Hommes </h2>
+    <!-- vetement1 -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet1.jpg" alt="vetement1" id="imgvetement1">
+                <div class="card-body">
+                    <h5 class="card-title">FLARED CARGO PANTS IN BLACK</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">1520 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form13">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option selected>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet1" value="Noir" checked>
+                                        <label class="form-check-label" for="vetement1">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement1" value="Gris">
+                                        <label class="form-check-label" for="vetement1">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet1.jpg', form13, '13','FLARED CARGO PANTS IN BLACK', 1520); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- vetement2 -->
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet2.jpg" alt="vetement2" id="imgvetement2">
+                <div class="card-body">
+                    <h5 class="card-title">CARDIGAN EN LAINE</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">1090 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form14">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet2" value="Noir" checked>
+                                        <label class="form-check-label" for="vet2">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement2" value="Gris">
+                                        <label class="form-check-label" for="vetement2">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet2.jpg', form14, '14','CARDIGAN EN LAINE', 1090); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- vetement3 -->
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet3.jpg" alt="vetement3" id="imgvetement3">
+                <div class="card-body">
+                    <h5 class="card-title">Viz Runner Repeat</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">670 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form15">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet3" value="Noir" checked>
+                                        <label class="form-check-label" for="vet3">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement3" value="Gris">
+                                        <label class="form-check-label" for="vetement3">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet3.jpg', form15, '15','Viz Runner Repeat', 670); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- femmes -->
+<h2 class="pt-4 mt-3">Femmes</h2>
+<!-- vetement4 -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet4.jpg" alt="vetement4" id="imgvetement4">
+                <div class="card-body">
+                    <h5 class="card-title">Straight-cut washed silk trousers</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">1520 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form16">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet4" value="Noir" checked>
+                                        <label class="form-check-label" for="vet4">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement4" value="Gris">
+                                        <label class="form-check-label" for="vetement4">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet4.jpg', form16, '16','Straight-cut washed silk trousers', 1520); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- vetement5 -->
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet5.jpg"  alt="vetement5" id="imgvetement5">
+                <div class="card-body">
+                    <h5 class="card-title">Simons robe col roulé larges côtes</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">1090 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form17">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet5" value="Noir" checked>
+                                        <label class="form-check-label" for="vet5">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement5" value="Gris">
+                                        <label class="form-check-label" for="vetement5">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet5.jpg', form17, '17','Simons robe col roulé larges côtes', 1090); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- vetement6 -->
+        <div class="col">
+            <div class="card">
+                <img class="card-img bd-placeholder-img card-img-top" src="images/vet6.jpg" alt="vetement6" id="imgvetement6">
+                <div class="card-body">
+                    <h5 class="card-title">WOMEN'S FITTED GOWN IN BLACK</h5>
+                    <p class="card-text">vêtement</p>
+                    <p class="card-text">670 $</p>
+                    <div class="card-text">
+                        <form class="form" id="form18">
+                            <span>taille</span>
+                            <select class="form-select" name="selection">
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <span>couleur</span>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vet6" value="Noir" checked>
+                                        <label class="form-check-label" for="vet6">
+                                            Noir
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="produit"
+                                            id="vetement6" value="Gris">
+                                        <label class="form-check-label" for="vetement6">
+                                            Gris
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <span>nombre : </span>
+                                    <input type="number" value="1" name="quantite" min="0" max="15">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/vet6.jpg', form18, '18','WOMEN S FITTED GOWN IN BLACK', 670); compteur()">Ajouter au panier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    </main>
+
+
+    <footer id="pied" class="text-white">
+        <div class="d-md-inline-block w-25 m-auto ">
+            <h6>nous contacter</h6>
+            <i class="fa-brands fa-facebook d-block d-md-inline-block m-3 m-md-0"></i>
+            <i class="fa-brands fa-instagram d-block d-md-inline-block m-3 m-md-0"></i>
+            <i class="fa-brands fa-x-twitter d-block d-md-inline-block m-3 m-md-0"></i>
+
+        </div>
+        <div class="d-md-inline-block w-25 m-auto my-5">
+            <h6>adresse</h6>
+            <p>205 Rue Monseigneur-Bourget, Lévis, QC G6V 6Z9</p>
+        </div>
+
+    </footer>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6973d5988.js" crossorigin="anonymous"></script>
+    <!-- scripts javascript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

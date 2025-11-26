@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Twix</title>
+    <meta name="author" content="Steven ATCHALL">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icone1.png">
+    <!--Détection de la taille d'affichage-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- feuilles de styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    
+</head>
+
+<body class="m-0" onload="compteur()">
+    <!-- CONTENU DE LA PAGE -->
+    <header id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="images/test.webp" class="d-block w-auto card-img img-fluid" alt="basket">
+                    <div class="card-img-overlay">
+                        <h1 class="card-title  titre">Twix</h1>
+                        <p class="card-text display-6">Aisance dans l'élégance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item card">
+                <img src="images/testHead2.jpg" class="d-block w-100" alt="femme">
+                <div class="card-img-overlay">
+                    <h1 class="card-title  titre">Twix</h1>
+                    <p class="card-text display-6">Aisance dans l'élégance</p>
+                </div>
+            </div>
+            <div class="carousel-item card">
+                <img src="images/testHeader.png" class="d-block w-100" alt="homme">
+                <div class="card-img-overlay">
+                    <h1 class="card-title  titre">Twix</h1>
+                    <p class="card-text display-6">Aisance dans l'élégance</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </header>
+
+
+    <nav class="navbar bg-body-secondary navbar-expand-lg navigateur sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html#top">
+                <i class="fa-brands fa-cotton-bureau"></i>
+                Twix
+            </a>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item"><a href="index.html#top" class="nav-link">Acceuil</a></li>
+                    <li class="nav-item"><a href="#top" class="nav-link active">Chaussures</a></li>
+                    <li class="nav-item"><a href="vetements.html" class="nav-link">Vêtements</a></li>
+                    <li class="nav-item"><a href="accessoires.html" class="nav-link">Accessoires</a></li>
+                    <li class="nav-item"><a href="#pied" class="nav-link">Nous contacter</a></li>
+                    <li class="nav-item"><div class="row"><a href="panier.html" class="nav-link col-12 col-lg-6"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+                        <label class="col-6 bg-light-subtle rounded-circle h-25 d-none d-lg-inline" id="navNombre">0</label></div></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+<!-- principal -->
+    <main>
+        <!-- section Nike -->
+        <h2 class="pt-4 mt-3">Nike</h2>
+        <!-- chaussure 1 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/chaussure1.webp" class="card-img-top" alt="chaussure1" id="chaussure1">
+                    <div class="card-body">
+                        <h5 id="nom1" class="card-title">Nike air force 1</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">150 $</p>
+                        
+                        <div class="card-text">
+                            <form class="form" id="form1">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancNike1" value="blanc" checked>
+                                            <label class="form-check-label" for="blancNike1">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuNike1" value="bleu">
+                                            <label class="form-check-label" for="bleuNike1">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirNike1" value="noir" >
+                                            <label class="form-check-label" for="noirNike1">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input id="nombre1" type="number" name="quantite" min="0" max="15" value="1">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/chaussure1.webp', form1, '1','Nike air force 1', 150); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chaussure 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/nike2.webp" class="card-img-top" alt="chaussure2" id="chaussure2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max Plus</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">160 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form2">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancNike2" value="blanc" checked>
+                                            <label class="form-check-label" for="blancNike2">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuNike2" value="bleu">
+                                            <label class="form-check-label" for="bleuNike2">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirNike2" value="noir" >
+                                            <label class="form-check-label" for="noirNike2">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button"  onclick="ajouterProduit('images/nike2.webp', form2, '2','Nike Air Max Plus', 160); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chaussure 3 -->
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/nike3.webp" class="card-img-top" alt="chaussure3" id="chaussure3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumpman MVP</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">100 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form3">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancNike3" value="blanc" checked>
+                                            <label class="form-check-label" for="blancNike3">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuNike3" value="bleu">
+                                            <label class="form-check-label" for="bleuNike3">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirNike3" value="noir" >
+                                            <label class="form-check-label" for="noirNike3">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/nike3.webp', form3, '3','Jumpman MVP', 100); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- chaussure 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/nike4.webp" class="card-img-top" alt="chaussure4" id="chaussure4">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 Mid</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">140 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form4">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancNike4" value="blanc" checked>
+                                            <label class="form-check-label" for="blancNike4">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuNike4" value="bleu">
+                                            <label class="form-check-label" for="bleuNike4">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirNike4" value="noir" >
+                                            <label class="form-check-label" for="noirNike4">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button"  onclick="ajouterProduit('images/nike4.webp', form4, '4','Air Jordan 1 Mid', 140); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section adidas -->
+        <h2 class="pt-4 mt-3">Adidas </h2>
+        <!-- chaussure 1 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/chaussure2.jpg" class="card-img-top" alt="chaussure5" id="chaussure5">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Superstar</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">150$</p>
+                        <div class="card-text">
+                            <form class="form" id="form5">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAdidas1" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAdidas1">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAdidas1" value="bleu">
+                                            <label class="form-check-label" for="bleuAdidas1">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAdidas1" value="noir" >
+                                            <label class="form-check-label" for="noirAdidas2">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button"  onclick="ajouterProduit('images/chaussure2.jpg', form5, '5', 'Adidas Superstar', 150); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chaussure 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/adidas2.jpg" class="card-img-top" alt="chaussure6" id="chaussure6">
+                    <div class="card-body">
+                        <h5 class="card-title">CHAUSSURE OZWEEGO</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">170 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form6">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAdidas2" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAdidas2">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAdidas2" value="bleu">
+                                            <label class="form-check-label" for="bleuAdidas2">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAdidas2" value="noir" >
+                                            <label class="form-check-label" for="noirAdidas2">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3" onclick="ajouterProduit('images/adidas2.jpg', form6, '6', 'CHAUSSURE OZWEEGO', 170); compteur()">
+                                <button class="btn btn-primary me-md-2" type="button">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chaussure 3 -->
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/adidas3.jpg" class="card-img-top" alt="chaussure7" id="chaussure7">
+                    <div class="card-body">
+                        <h5 class="card-title">CHAUSSURE CLOUDFOAM PURE</h5>
+                        <p class="card-text">chaussure</p>
+                        <p>100 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form7">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAdidas3" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAdidas3">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAdidas3" value="bleu">
+                                            <label class="form-check-label" for="bleuAdidas3">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAdidas3" value="noir" >
+                                            <label class="form-check-label" for="noirAdidas3">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/adidas3.jpg', form7, '7', 'CHAUSSURE CLOUDFOAM PURE', 100); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- chaussure 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/adidas4.jpg" class="card-img-top" alt="chaussure8" id="chaussure8">
+                    <div class="card-body">
+                        <h5 class="card-title">CHAUSSURE DE RANDONNÉE TERREX</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">150 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form8">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAdidas4" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAdidas4">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAdidas4" value="bleu">
+                                            <label class="form-check-label" for="bleuAdidas4">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAdidas4" value="noir" >
+                                            <label class="form-check-label" for="noirAdidas4">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/adidas4.jpg', form8, '8', 'CHAUSSURE DE RANDONNÉE TERREX', 150); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- section puma et Balenciaga -->
+        <h2 class="pt-4 mt-3">Puma & Balenciaga</h2>
+        <!-- chaussure 1 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/chaussure3.png" class="card-img-top" alt="chaussure9" id="chaussure9">
+                    <div class="card-body">
+                        <h5 class="card-title">Viz Runner Repeat</h5>
+                        <p class="card-text">chaussure</p>
+                        <p>60 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form9">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAutre1" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAutre1">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAutre1" value="bleu">
+                                            <label class="form-check-label" for="bleuAutre1">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAutre1" value="noir" >
+                                            <label class="form-check-label" for="noirAutre1">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15" >
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/chaussure3.png', form9, '9', 'Puma & Balenciaga', 60); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chaussure 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/puma2.png" class="card-img-top" alt="chaussure10" id="chaussure10">
+                    <div class="card-body">
+                        <h5 class="card-title">Suede Classic</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">95 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form10">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAutre2" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAutre2">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAutre2" value="bleu">
+                                            <label class="form-check-label" for="bleuAutre2">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAutre2" value="noir" >
+                                            <label class="form-check-label" for="noirAutre2">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/puma2.png', form10, '10', 'Suede Classic', 95); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chaussure 3 -->
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/chaussure4.jpg" class="card-img-top" alt="chaussure11" id="chaussure11">
+                    <div class="card-body">
+                        <h5 class="card-title">BALENCIAGA MEN'S RUNNER</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">1200 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form11">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAutre3" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAutre3">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAutre3" value="bleu">
+                                            <label class="form-check-label" for="bleuAutre3">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAutre3" value="noir" >
+                                            <label class="form-check-label" for="noirAutre3">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button" onclick="ajouterProduit('images/chaussure4.jpg', form11, '11', 'BALENCIAGA MEN S RUNNER', 1200); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- chaussure 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/balenciaga2.jpg" class="card-img-top" alt="chaussure12">
+                    <div class="card-body">
+                        <h5 class="card-title">MEN'S SNEAKER</h5>
+                        <p class="card-text">chaussure</p>
+                        <p class="card-text">1000 $</p>
+                        <div class="card-text">
+                            <form class="form" id="form12">
+                                <span>taille</span>
+                                <select name="selection" class="form-select">
+                                    <option selected>9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                </select>
+                                <span>couleur</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="blancAutre4" value="blanc" checked>
+                                            <label class="form-check-label" for="blancAutre4">
+                                                Blanc
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="bleuAutre4" value="bleu">
+                                            <label class="form-check-label" for="bleuAutre4">
+                                                Bleu
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="produit"
+                                                id="noirAutre4" value="noir" >
+                                            <label class="form-check-label" for="noirAutre4">
+                                                Noir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>nombre : </span>
+                                        <input type="number" value="1" name="quantite" min="0" max="15">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                <button class="btn btn-primary me-md-2" type="button"  onclick="ajouterProduit('images/balenciaga2.jpg', form12, '12', 'MEN S SNEAKER', 1000); compteur()">Ajouter au panier</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- pied de page -->
+    <footer id="pied" class="text-white">
+        <div class="d-md-inline-block w-25 m-auto bas">
+            <h6>nous contacter</h6>
+            <i class="fa-brands fa-facebook d-block d-md-inline-block m-3 m-md-0"></i>
+            <i class="fa-brands fa-instagram d-block d-md-inline-block m-3 m-md-0"></i>
+            <i class="fa-brands fa-x-twitter d-block d-md-inline-block m-3 m-md-0"></i>
+
+        </div>
+        <div class="d-md-inline-block w-25 m-auto my-5 bas">
+            <h6>adresse</h6>
+            <p>205 Rue Monseigneur-Bourget, Lévis, QC G6V 6Z9</p>
+        </div>
+
+    </footer>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6973d5988.js" crossorigin="anonymous"></script>
+    <!-- scripts javascript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

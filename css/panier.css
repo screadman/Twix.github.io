@@ -1,0 +1,19 @@
+main{
+    width: 100%;
+    margin: auto;
+}
+#contenu{
+    position: sticky;
+    top: 5rem;
+}
+#total{
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+}
+@media screen and (min-width: 992px) {
+    #total{
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    
+}
